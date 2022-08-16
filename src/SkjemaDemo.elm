@@ -125,8 +125,8 @@ viewSkjema skjema =
             |> Input.toHtml
         , skjema
             |> Skjema.arbeidsoppgaver
-            |> Textarea.textarea { msg = ArbeidsoppgaverOppdatert, label = "Arbeidsoppgaver" }
-            |> Textarea.toHtml
+            |> Input.input { msg = ArbeidsoppgaverOppdatert, label = "Arbeidsoppgaver" }
+            |> Input.toHtml
         , div [ class "datoinputrad" ]
             [ DatoInput.datoInput
                 { label = "Når startet du i jobben?"
