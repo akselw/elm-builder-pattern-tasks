@@ -1,7 +1,6 @@
 module FrontendModuler.Input exposing
     ( Enabled(..)
     , Input
-    , InputOptions
     , input
     , toHtml
     , withClass
@@ -47,13 +46,7 @@ type alias Options msg =
     }
 
 
-type alias InputOptions msg =
-    { msg : String -> msg
-    , label : String
-    }
-
-
-input : InputOptions msg -> String -> Input msg
+input : { msg : String -> msg, label : String } -> String -> Input msg
 input { msg, label } innhold =
     Input
         { msg = msg
