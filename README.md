@@ -3,6 +3,6 @@
 Kjøre lokalt:
 
 ```
-$ npm ci
+$ npm ci --legacy-peer-deps
 $ npm start
 ```
